@@ -19,7 +19,7 @@ async function main() {
   const receiverAddress = "0x12785FC9Ad49ABEA2dA1A019e071B88F37aC9f10"; // Replace with the actual address to transfer funds to
 
   // Transfer funds
-  const amountToSend = ethers.utils.parseUnits('0.01', 18); // Replace with the actual amount you want to transfer
+  const amountToSend = ethers.utils.parseUnits('0.001', 18); // Replace with the actual amount you want to transfer
   const transferTx = await relaySigner.sendTransaction({
     to: receiverAddress,
     value: amountToSend,
